@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "T08HandoffEnvelope",
+  "type": "object",
+  "required": [
+    "source_tool",
+    "target_tool",
+    "artifact_type",
+    "schema_version",
+    "qa_report_ref",
+    "video_ref",
+    "source_refs",
+    "integrity_sha256"
+  ],
+  "properties": {
+    "source_tool": {
+      "const": "T08_QA_VISION"
+    },
+    "target_tool": {
+      "const": "T09_PROMPT_OPTIMIZER"
+    },
+    "artifact_type": {
+      "const": "QAReport"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "qa_report_ref": {
+      "type": "string"
+    },
+    "video_ref": {
+      "type": "string"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "integrity_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

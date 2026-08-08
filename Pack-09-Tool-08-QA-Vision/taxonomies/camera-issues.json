@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "issues": [
+    "aspect_ratio_mismatch",
+    "orientation_mismatch",
+    "unexpected_zoom",
+    "tracking_failure",
+    "camera_static_unexpected",
+    "subject_scale_drift",
+    "start_end_reversal",
+    "critical_crop",
+    "orbit_unexpected",
+    "angle_jump",
+    "continuity_break",
+    "horizon_instability",
+    "unknown"
+  ]
+}

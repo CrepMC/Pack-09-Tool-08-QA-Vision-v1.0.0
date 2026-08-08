@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "statuses": [
+    "PASS",
+    "FAIL",
+    "NEEDS_REVIEW",
+    "UNKNOWN"
+  ],
+  "rule": "Unknown/insufficient evidence must not be silently converted to PASS."
+}

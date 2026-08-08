@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "issues": [
+    "forbidden_product_contact",
+    "product_occluding_gesture",
+    "foot_sliding",
+    "teleport",
+    "excessive_turn",
+    "over_choreography",
+    "camera_incompatible_motion",
+    "mid_step_ending",
+    "unsettled_final_state",
+    "accessory_instability",
+    "unnatural_transition",
+    "unknown"
+  ]
+}

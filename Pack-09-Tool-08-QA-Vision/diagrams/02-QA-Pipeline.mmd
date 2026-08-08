@@ -1,0 +1,17 @@
+flowchart LR
+ A[Generated Video + Contracts] --> B[Validate Sources]
+ B --> C[Video Metadata & Sampling]
+ C --> D[Product QA]
+ C --> E[Camera QA]
+ C --> F[Motion QA]
+ C --> G[Environment QA]
+ C --> H[Cinematic QA]
+ D --> I[Issues + Evidence]
+ E --> I
+ F --> I
+ G --> I
+ H --> I
+ I --> J[Scores + Blocking Rules]
+ J --> K[PASS / FAIL / REVIEW]
+ K --> L[Correction Targets]
+ L --> M[T09 Prompt Optimizer]

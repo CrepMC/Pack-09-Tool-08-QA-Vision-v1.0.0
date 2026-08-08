@@ -1,0 +1,7 @@
+flowchart LR
+ Q[QA Report] --> F[Failing Constraints]
+ Q --> P[Passing Constraints]
+ F --> C[Correction Targets]
+ P --> C
+ C --> O[T09 Prompt Optimizer]
+ O --> R[Minimal Delta Repair]

@@ -1,0 +1,13 @@
+# QA Report Review
+- [ ] Video ref correct.
+- [ ] Upstream refs correct.
+- [ ] Product score reviewed.
+- [ ] Camera score reviewed.
+- [ ] Motion score reviewed.
+- [ ] Environment score reviewed.
+- [ ] Cinematic score reviewed.
+- [ ] Critical issues have evidence.
+- [ ] Timecodes plausible.
+- [ ] Passing constraints recorded.
+- [ ] Correction targets minimal.
+- [ ] No prompt rewriting.

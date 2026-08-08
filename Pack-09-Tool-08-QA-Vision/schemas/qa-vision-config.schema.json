@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QAVisionConfig",
+  "type": "object",
+  "properties": {
+    "pass_threshold": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 95
+    },
+    "product_min_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 95
+    },
+    "allow_blocking_issue_on_pass": {
+      "const": false
+    },
+    "require_timecode_for_major_issues": {
+      "type": "boolean",
+      "default": true
+    },
+    "require_evidence_for_failures": {
+      "type": "boolean",
+      "default": true
+    },
+    "preserve_passing_constraints": {
+      "type": "boolean",
+      "default": true
+    },
+    "max_sample_gap_seconds": {
+      "type": "number",
+      "minimum": 0.1,
+      "default": 0.5
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "issues": [
+    "category_mutation",
+    "silhouette_mutation",
+    "neckline_mutation",
+    "collar_mutation",
+    "color_drift",
+    "pattern_mutation",
+    "logo_mutation",
+    "closure_mutation",
+    "button_missing",
+    "pocket_mutation",
+    "accessory_missing",
+    "accessory_mutation",
+    "material_mismatch",
+    "product_occlusion",
+    "product_crop",
+    "unknown"
+  ]
+}

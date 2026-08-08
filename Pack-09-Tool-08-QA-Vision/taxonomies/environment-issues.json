@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "issues": [
+    "background_replacement",
+    "new_person",
+    "new_object",
+    "anchor_missing",
+    "anchor_drift",
+    "signage_mutation",
+    "text_invention",
+    "geometry_morph",
+    "ground_plane_instability",
+    "parallax_mismatch",
+    "path_collision",
+    "foreground_occlusion",
+    "unknown"
+  ]
+}

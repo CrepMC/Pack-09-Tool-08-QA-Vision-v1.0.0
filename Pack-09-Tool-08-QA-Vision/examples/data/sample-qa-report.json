@@ -1,0 +1,154 @@
+{
+  "artifact_id": "art_qa_001",
+  "artifact_type": "QAReport",
+  "schema_version": "1.0.0",
+  "artifact_version": "1.0.0",
+  "project_id": "fashion_ad_001",
+  "status": "LOCKED",
+  "video_ref": "video_generation_001",
+  "source_refs": {
+    "product_dna": "art_pdna_001",
+    "creative_brief": "art_creative_001",
+    "camera_plan": "art_camera_001",
+    "motion_plan": "art_motion_001",
+    "environment_plan": "art_env_001",
+    "cinematic_plan": "art_cine_001"
+  },
+  "overall_result": "FAIL",
+  "domain_scores": {
+    "product": {
+      "score": 89,
+      "status": "FAIL",
+      "blocking_issue_count": 1,
+      "major_issue_count": 0,
+      "confidence": 0.95,
+      "notes": [
+        "Neckline mutation detected."
+      ]
+    },
+    "camera": {
+      "score": 97,
+      "status": "PASS",
+      "blocking_issue_count": 0,
+      "major_issue_count": 0,
+      "confidence": 0.94,
+      "notes": [
+        "9:16 and dolly-back behavior preserved."
+      ]
+    },
+    "motion": {
+      "score": 91,
+      "status": "FAIL",
+      "blocking_issue_count": 1,
+      "major_issue_count": 0,
+      "confidence": 0.92,
+      "notes": [
+        "Hand contact with neckline contributes to product mutation."
+      ]
+    },
+    "environment": {
+      "score": 98,
+      "status": "PASS",
+      "blocking_issue_count": 0,
+      "major_issue_count": 0,
+      "confidence": 0.93,
+      "notes": [
+        "Scene identity and anchors preserved."
+      ]
+    },
+    "cinematic": {
+      "score": 96,
+      "status": "PASS",
+      "blocking_issue_count": 0,
+      "major_issue_count": 0,
+      "confidence": 0.9,
+      "notes": [
+        "Color/material treatment acceptable."
+      ]
+    }
+  },
+  "issues": [
+    {
+      "issue_id": "qa_issue_001",
+      "domain": "product",
+      "secondary_domains": [
+        "motion"
+      ],
+      "issue_type": "neckline_mutation",
+      "severity": "critical",
+      "blocking": true,
+      "title": "Neckline shape changes during hand interaction",
+      "description": "The collarless V-neck deforms into a folded/raised neckline during the gesture.",
+      "expected": "Preserve the collarless V-neck geometry throughout the video.",
+      "observed": "At 3.1–3.8s the hand contacts the neckline and the neckline shape changes.",
+      "evidence": [
+        {
+          "evidence_id": "ev_001",
+          "type": "frame_range",
+          "time_start": 3.1,
+          "time_end": 3.8,
+          "frame_ref": "frames_093_114",
+          "region": "upper torso / neckline",
+          "description": "Hand overlaps neckline and garment edge changes shape.",
+          "confidence": 0.96
+        }
+      ],
+      "recommended_target": "Prevent any hand contact with the neckline and preserve the exact collarless V-neck edge.",
+      "confidence": 0.96
+    }
+  ],
+  "passing_constraints": [
+    {
+      "domain": "camera",
+      "constraint_id": "cam_ratio_9x16",
+      "description": "Video remains portrait 9:16.",
+      "confidence": 0.99
+    },
+    {
+      "domain": "camera",
+      "constraint_id": "cam_dolly_back",
+      "description": "Camera tracking/dolly behavior is acceptable.",
+      "confidence": 0.93
+    },
+    {
+      "domain": "environment",
+      "constraint_id": "env_scene_identity",
+      "description": "Approved background identity is preserved.",
+      "confidence": 0.95
+    },
+    {
+      "domain": "cinematic",
+      "constraint_id": "cine_blue_lock",
+      "description": "Blue shirt color family remains correct.",
+      "confidence": 0.94
+    }
+  ],
+  "correction_targets": [
+    {
+      "target_id": "target_001",
+      "domain": "motion",
+      "priority": "P0",
+      "objective": "Remove hand contact with the neckline while preserving all currently passing camera, environment and color behavior.",
+      "issue_refs": [
+        "qa_issue_001"
+      ],
+      "preserve_passing_constraints": [
+        "cam_ratio_9x16",
+        "cam_dolly_back",
+        "env_scene_identity",
+        "cine_blue_lock"
+      ],
+      "do_not_change": [
+        "camera path",
+        "aspect ratio",
+        "background identity",
+        "product color grade"
+      ]
+    }
+  ],
+  "review_summary": "The video fails because the neckline mutates during a hand gesture. Camera, background and cinematic color behavior should be preserved during prompt repair.",
+  "warnings": [
+    "A new generation should be re-QA'd as a new report."
+  ],
+  "created_at": "2026-08-08T08:00:00Z"
+}

@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "levels": [
+    {
+      "id": "info",
+      "blocking": false
+    },
+    {
+      "id": "minor",
+      "blocking": false
+    },
+    {
+      "id": "major",
+      "blocking": false
+    },
+    {
+      "id": "critical",
+      "blocking": true
+    }
+  ],
+  "rule": "Blocking state can be elevated by hard constraints even when visual severity appears moderate."
+}

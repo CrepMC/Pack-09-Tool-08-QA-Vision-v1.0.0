@@ -1,0 +1,8 @@
+flowchart TD
+ S[Domain Scores] --> A[Aggregate]
+ I[Issues] --> B{Any Blocking Issue?}
+ B -->|Yes| F[FAIL]
+ B -->|No| T{Thresholds + Confidence Pass?}
+ T -->|Yes| P[PASS]
+ T -->|No| R[FAIL / NEEDS_REVIEW]
+ A --> T

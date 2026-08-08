@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "types": [
+    "frame",
+    "frame_range",
+    "visual_region",
+    "metric",
+    "contract_diff",
+    "manual_confirmation",
+    "runtime_metadata",
+    "unknown"
+  ]
+}

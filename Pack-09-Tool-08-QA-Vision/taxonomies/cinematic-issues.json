@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "issues": [
+    "product_hue_drift",
+    "pattern_color_drift",
+    "material_transform",
+    "overexposure",
+    "shadow_crush",
+    "plastic_skin",
+    "product_blur",
+    "anchor_blur",
+    "motion_smear",
+    "excessive_bloom",
+    "white_balance_drift",
+    "oversaturation",
+    "unknown"
+  ]
+}

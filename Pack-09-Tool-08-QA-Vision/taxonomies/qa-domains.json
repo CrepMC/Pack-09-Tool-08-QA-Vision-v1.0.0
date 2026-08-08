@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "domains": [
+    "product",
+    "camera",
+    "motion",
+    "environment",
+    "cinematic",
+    "global"
+  ],
+  "rule": "Every issue belongs to a primary domain and may reference secondary domains."
+}

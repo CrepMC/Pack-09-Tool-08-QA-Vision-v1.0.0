@@ -1,0 +1,18 @@
+{
+  "pack_id": "PACK_09_TOOL_08_QA_VISION",
+  "name": "Tool 08 — QA Vision",
+  "version": "1.0.0",
+  "released_at": "2026-08-08",
+  "upstream": [
+    "GENERATED_VIDEO",
+    "T07_CINEMATIC_DIRECTOR",
+    "T06_ENVIRONMENT_DIRECTOR",
+    "T05_MOTION_DIRECTOR",
+    "T04_CAMERA_DIRECTOR",
+    "T03_CREATIVE_DIRECTOR",
+    "T02_PRODUCT_DNA"
+  ],
+  "downstream": "T09_PROMPT_OPTIMIZER",
+  "primary_artifact": "QAReport",
+  "prompt_count": 3
+}

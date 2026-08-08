@@ -1,0 +1,3 @@
+# Diagrams
+
+Mermaid source files.
