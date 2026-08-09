@@ -85,9 +85,9 @@ Tool này chịu trách nhiệm:
 
 ## Ba prompt chính
 
-1. `Prompt-01-Foundation-Video-Ingest-QA-Contract-and-UI.md`
-2. `Prompt-02-Multidomain-Vision-Review-Scoring-Evidence-and-Timecode-Engine.md`
-3. `Prompt-03-Production-Hardening-T09-Handoff-Validation-and-Release.md`
+1. [`Prompt-01-Foundation-Video-Ingest-QA-Contract-and-UI.md`](./prompts/Prompt-01-Foundation-Video-Ingest-QA-Contract-and-UI.md)
+2. [`Prompt-02-Multidomain-Vision-Review-Scoring-Evidence-and-Timecode-Engine.md`](./prompts/Prompt-02-Multidomain-Vision-Review-Scoring-Evidence-and-Timecode-Engine.md)
+3. [`Prompt-03-Production-Hardening-T09-Handoff-Validation-and-Release.md`](./prompts/Prompt-03-Production-Hardening-T09-Handoff-Validation-and-Release.md)
 
 ## Definition of Done
 

@@ -9,17 +9,17 @@
 
 ## Prompt statistics
 
-### Prompt-01-Foundation-Video-Ingest-QA-Contract-and-UI.md
+### [`Prompt-01-Foundation-Video-Ingest-QA-Contract-and-UI.md`](./prompts/Prompt-01-Foundation-Video-Ingest-QA-Contract-and-UI.md)
 - Words: 1,493
 - Characters: 11,291
 - SHA-256: `e9c258073b981d1a717151eaa45b0a5079d667fb55fe96536d0c80d00734750e`
 
-### Prompt-02-Multidomain-Vision-Review-Scoring-Evidence-and-Timecode-Engine.md
+### [`Prompt-02-Multidomain-Vision-Review-Scoring-Evidence-and-Timecode-Engine.md`](./prompts/Prompt-02-Multidomain-Vision-Review-Scoring-Evidence-and-Timecode-Engine.md)
 - Words: 2,068
 - Characters: 14,727
 - SHA-256: `07ef4ec73c9efd2714c077a305957e77a4fad856631425da9b4f950e64415f3e`
 
-### Prompt-03-Production-Hardening-T09-Handoff-Validation-and-Release.md
+### [`Prompt-03-Production-Hardening-T09-Handoff-Validation-and-Release.md`](./prompts/Prompt-03-Production-Hardening-T09-Handoff-Validation-and-Release.md)
 - Words: 1,760
 - Characters: 12,479
 - SHA-256: `a948b0968b32a027112fe6cc5777bb82ce8119cb9bdf64c4969c6864977bfb64`
